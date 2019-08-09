@@ -1,0 +1,162 @@
+<link rel="stylesheet" href="Bussiness_corporate_utensils.css">
+
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<!--navbar-->
+  <div class="navbar">
+    <ul>
+      <li>
+          <a  class = "active" href = "#Business Corporate">Utensils</a>
+      </li>
+      <li>
+        <!--<a href = "Events">Events</a>; the dropdown button-->
+        <div class="dropdown">
+          <button class= "dropbtn">Events</button>
+          <div class="dropdown-content">
+            <a href="../Bussiness_corporate_mvp/Bussiness_corporate_mvp.html">Business Corporate </a>
+            <a href="sea.html">Birthday Parties</a>
+          </div>
+        </div>
+      </li>
+      <li><a href = "../Main_Page_Content/Home/Event_Planing_Home_Page.html">Home</a></li>
+      <li><a href = "../Main_Page_Content/About/Event_Planing_About_Page.html">About</a></li>
+      <li><a href = "../Main_Page_Content/Contact/Event_Planing_Contact_Page.html">Contact</a></li>
+    </ul>
+  </div>
+
+
+<!---+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++This is the catagory for the Plates------------------------------------------------------>
+<!--- The title will be highligted in grey-->
+  <div class="title">
+    <h2>Plates</h2>
+  </div>
+<!--This is the variable for the container-->
+  <form>
+    <div class="pictures-container">
+<!--This is the picture of the golden plate, the first plate-->
+      <div>
+        <img class="pic" src="Plates/silver_plate.jpg" alt="">
+        <input type="checkbox" id="ck_plate1" name="silver_plate" value="silver_plate" onclick="myFunction()">
+      </div>
+<!--This is the picture of a white plate, the second plate-->
+      <div>
+        <img class="pic" src="Plates/gold_plate.jpg" alt="">
+        <input type="checkbox" id="ck_plate2" name="gold_plate" value="gold_plate" onclick="myFunction()">
+      </div>
+<!--This is the white with black edges plate, the third plate-->
+      <div>
+        <img class="pic" src="Plates/white_with_blackedges.jpg" alt="">
+        <input type="checkbox" id="ck_plate3" name="white_with_blackedges" value="white_with_blackedges" onclick="myFunction()">
+      </div>
+    </div>
+  <br>
+  <br>
+<!---+++++++++++++++++++++++++++++++This is the catagory for the Cultery Set------------------------------------------------------->
+<!-- The title will be highligted in grey-->
+  <div class="title">
+    <h2>Cutlery Set</h2>
+  </div>
+<!--This is the variable for the container-->
+    <div class="pictures-container">
+<!--This is the picture of white cultery, the first cultery set-->
+      <div>
+        <img class="pic" src="Cutlery/white_cutlery_set.jpg" alt="">
+        <input type="checkbox" id="ck_cutlery1" name="white_cutlery_set" value="white_cutlery_set" onclick="myFunction()">
+      </div>
+<!--This is the picture of the golden cultery, the second set-->
+      <div>
+        <img class="pic" src="Cutlery/golden_cutlery_set.jpg" alt="">
+        <input type="checkbox" id="ck_cutlery2" name="golden_cutlery_set" value="golden_cutlery_set" onclick="myFunction()">
+      </div>
+<!--This is the picture of the black cultery, the third set-->
+      <div>
+        <img class="pic" src="Cutlery/black_cutlery_set.jpg" alt="">
+        <input type="checkbox" id="ck_cutlery3" name="black_cutlery_set" value="black_cutlery_set" onclick="myFunction()">
+      </div>
+    </div>
+    <br>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=This is the catagory for the Napkinst----------------------------------------------------->
+<!-- The title will be highligted in grey-->
+  <div class="title">
+    <h2>Napkins</h2>
+  </div>
+<!--This is the variable for the container-->
+    <div class="pictures-container">
+<!--This is the picture of the grey napkins set-->
+      <div>
+        <img class="pic" src="Napkins/grey_napkin.jpg" alt="">
+        <input type="checkbox" id="ck_napkin1" name="grey_napkin" value="grey_napkin" onclick="myFunction()">
+      </div>
+<!--This is the picture of the navy blue napkins set-->
+      <div>
+        <img class="pic" src="Napkins/navy_blue_napkin.jpg" alt="">
+        <input type="checkbox" id="ck_napkin2" name="navy_blue" value="navy_bluenapkin" onclick="myFunction()">
+      </div>
+<!--This is the picture of the dark blue napkins set-->
+      <div>
+        <img class="pic" src="Napkins/dark_blue_napkin.jpg" alt="">
+        <input type="checkbox"id="ck_napkin3"  name="dark_blue" value="dark_bluenapkin" onclick="myFunction()">
+      </div>
+    </div>
+    <br>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=This is the catagory for the Glass Cups------------------------------------------------------->
+<!-- The title will be highligted in grey-->
+  <div class="title">
+    <h2>Glass Ware</h2>
+  </div>
+<!--This is the variable for the container-->
+    <div class="pictures-container">
+<!--This is the picture for the chmpagne glass-->
+      <div>
+        <img class="pic" src="Glass Ware/champagne_glass.jpg" alt="">
+        <input type="checkbox" id="ck_glass1" name="champagne_glass" value="champagne_glass" onclick="myFunction()">
+      </div>
+<!--This is the picture for the wine glass-->
+      <div>
+        <img class="pic" src="Glass Ware/wine_glass.jpg" alt="">
+        <input type="checkbox" id="ck_glass2" name="wine_glass" value="wine_glass" onclick="myFunction()">
+      </div>
+<!--This is the picture for the water glass-->
+      <div>
+        <img class="pic" src="Glass Ware/water_glass.jpg" alt="">
+        <input type="checkbox" id="ck_glass3" name="water_glass" value="water_glass" onclick="myFunction()">
+      </div>
+    </div>
+    <br>
+    <hr>
+    <!-- Submit button once the user is done selecting -->
+    <button class="submitButton" onclick="myFunctionSubmit()">Submit</button>
+    <!--<input type="submit" value="Submit" onclick="myFunctionS()">-->
+  </form>
+  <br>
+  <br>
+
+<script>
+
+  function myFunction(){
+    console.log("Clicked");
+  }
+
+  function myFunctionSubmit() {
+    if (document.getElementById("ck_glass1").checked == true) {
+      if ((document.getElementById("ck_glass2").checked == true) ||
+          (document.getElementById("ck_glass3").checked == true) ||
+          (document.getElementById("ck_plate1").checked == true) ||
+          (document.getElementById("ck_cutlery1").checked == true)) {
+            window.open("../suggestion2.html");
+          }
+      else { window.open("../suggestion1.html"); }
+    }
+    else if ((document.getElementById("ck_plate1").checked == true) ||
+          (document.getElementById("ck_cutlery1").checked == true)) 
+          { window.open("../suggestion3.html");}
+  }
+
+
+</script>
+
+</body>
+</html>
